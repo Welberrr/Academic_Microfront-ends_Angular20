@@ -6,10 +6,15 @@ module.exports = withModuleFederationPlugin({
 
   exposes: {
     './Component': './src/app/app.ts',
+    './Carrinho': './src/app/carrinho/carrinho.ts'
   },
 
   shared: {
-    ...shareAll({ singleton: true, strictVersion: true, requiredVersion: 'auto' }),
+    ...shareAll({ 
+      singleton: true, 
+      strictVersion: true, 
+      requiredVersion: 'auto' 
+    }),
   },
 
 });

@@ -1,7 +1,5 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { OnInit } from '@angular/core';
-import { Chart } from 'chart.js';
+import { Component, OnInit, signal } from '@angular/core';
+import { Chart } from 'chart.js/auto'
 
 @Component({
   selector: 'app-root',
@@ -10,20 +8,20 @@ import { Chart } from 'chart.js';
   styleUrl: './app.scss'
 })
 export class App implements OnInit {
-
+  
   ngOnInit(): void {
     const dados = [
-      { categorias: 'Eletrônicos', valor: 10 },
-      { categorias: 'Roupas', valor: 15 },
-      { categorias: 'Decoracao', valor: 5 },
-      { categorias: 'Ferramentas', valor: 20 },
-      { categorias: 'Acessorios', valor: 8 }, 
+      { categoria: 'Eletronicos', valor: 10 },
+      { categoria: 'Roupas', valor: 15 },
+      { categoria: 'Decoração', valor: 5 },
+      { categoria: 'Ferramentas', valor: 20 },
+      { categoria: 'Acessórios', valor: 17 }
     ];
 
-    const labels = dados.map(v => v.categorias);
+    const labels = dados.map(v => v.categoria);
     const valores = dados.map(v => v.valor);
 
-    new Chart("barChart", {
+    new Chart('barChart', {
       type: 'bar',
       data: {
         labels: labels,
@@ -31,13 +29,13 @@ export class App implements OnInit {
           {
             label: 'Categorias Mais Vendidas',
             data: valores,
-            backgroundColor: 'rgba(75, 192, 192, 0.6)',
+            backgroundColor: 'rgba(31, 82, 146, 0.6)'
           }
         ]
       },
       options: {
         responsive: true,
-        scales: {
+        scales:  {
           y: {
             beginAtZero: true
           }
