@@ -4,7 +4,7 @@ Este repositório contém uma **Prova de Conceito (PoC)** dedicada ao estudo e i
 
 O objetivo principal deste projeto é demonstrar a descentralização de aplicações web, onde diferentes domínios de negócio (Vendas, Produtos e Gráficos) operam de forma independente, mas são integrados em uma única *Single Page Application* (SPA) através de um Shell.
 
-![Visão Geral da Arquitetura](<img width="1900" height="887" alt="{5DC73768-55B8-47D7-B8CC-D69B22E12BBC}" src="https://github.com/user-attachments/assets/9d4477b9-1381-43b4-87ff-ad88c910ba6e" />)
+![Visão Geral da Arquitetura]<img width="1900" height="887" alt="{5DC73768-55B8-47D7-B8CC-D69B22E12BBC}" src="https://github.com/user-attachments/assets/9d4477b9-1381-43b4-87ff-ad88c910ba6e" />
 > *Visão geral da aplicação Shell integrando os módulos remotos.*
 
 ---
@@ -36,8 +36,8 @@ O projeto foi dividido em três aplicações distintas para simular um ambiente 
 ⚠️ **Nota:** Este é um projeto focado estritamente na **arquitetura de software** e na comunicação entre micro-aplicações.
 Atualmente, a interface visual é minimalista (MVP), focada na funcionalidade da **Navbar** e no carregamento correto dos módulos remotos, sem estilização avançada ou regras de negócio complexas.
 
-![Exemplo de Navegação](<img width="1911" height="480" alt="{23C1A9EE-AD2E-421F-8EF1-1C7A359F82B0}" src="https://github.com/user-attachments/assets/276e763f-6485-4aba-a1f1-ba0228e40195" />
-)
+![Exemplo de Navegação]<img width="1911" height="480" alt="{23C1A9EE-AD2E-421F-8EF1-1C7A359F82B0}" src="https://github.com/user-attachments/assets/276e763f-6485-4aba-a1f1-ba0228e40195" />
+
 > *Navegação entre os módulos Produtos e Gráfico.*
 
 ---
